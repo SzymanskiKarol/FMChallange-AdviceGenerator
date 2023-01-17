@@ -22,3 +22,9 @@ function generateAdvice() {
             console.error('Error:', error);
         });
 }
+
+const dice = document.querySelector(".dice");
+
+function toggleActive() {
+    dice.classList.toggle('active');
+  }
