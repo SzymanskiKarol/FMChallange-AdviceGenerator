@@ -16,7 +16,7 @@ function generateAdvice() {
         .then(data => {
             console.log('Success:', data);
             adviceId.innerText = "Advice: #" + data.slip.id;
-            adviceContent.innerText = data.slip.advice;
+            adviceContent.innerText = '"' + data.slip.advice + '"';
         })
         .catch((error) => {
             console.error('Error:', error);

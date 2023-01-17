@@ -30,8 +30,9 @@ body {
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
+    gap: 2rem;
     width: 600px;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: 1rem;
     position: relative;
@@ -39,6 +40,7 @@ body {
 
 #advice-id {
     color: var(--Neon-Green);
+    letter-spacing: 4px;
 }
 
 #advice-content {
@@ -78,4 +80,18 @@ button:focus img {
 img {
     object-fit: contain;
     transition: rotate 0.5s ease-in-out;
+}
+
+@media (max-width: 610px) {
+    .container {
+        width: 90%;
+    }
+
+    #advice-content {
+        font-size: 24px;
+    }
+
+    #advice-id {
+        font-size: 13px;
+    }
 }
